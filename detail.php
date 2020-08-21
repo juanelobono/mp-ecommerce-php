@@ -54,7 +54,7 @@ $preference->auto_return = "approved";
 $item = new MercadoPago\Item();
 $item->id = 1234;
 $item->description = "Dispositivo móvil de Tienda e-commerce";
-$item->picture_url = $link . "/" . $_POST['img'];
+$item->picture_url = $link . "/." . $_POST['img'];
 $item->title = $_POST['title'];
 $item->quantity = 1;
 $item->unit_price = $_POST['price'];
@@ -171,7 +171,7 @@ $preference->save();
                                             <div class="clearfix image-list xs-no-js as-util-relatedlink relatedlink" data-relatedlink="6|Powerbeats3 Wireless Earphones - Neighborhood Collection - Brick Red|MPXP2">
                                                 <div class="as-tilegallery-element as-image-selected">
                                                     <div class=""></div>
-                                                    <img src="<?php echo $link . '/' . $_POST['img'] ?>" class="ir ir item-image as-producttile-image" alt="" width="445" height="445" style="content:-webkit-image-set(url(<?php echo $_POST['img'] ?>) 2x);">
+                                                    <img src="<?php echo $link . '/.' . $_POST['img'] ?>" class="ir ir item-image as-producttile-image" alt="" width="445" height="445" style="content:-webkit-image-set(url(<?php echo $_POST['img'] ?>) 2x);">
                                                 </div>
                                                 
                                             </div>
