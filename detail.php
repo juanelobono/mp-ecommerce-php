@@ -17,11 +17,12 @@ MercadoPago\SDK::setIntegratorId("dev_24c65fb163bf11ea96500242ac130004");
 //Metodos de pagos
 $preference->payment_methods = array(
     "excluded_payment_methods" => array(
-      array("id" => "amex​")
-    ),
-    "excluded_payment_types" => array(
-      array("id" => "atm")
-    ),
+        array("id" => "amex")
+      ),
+      "excluded_payment_types" => array(
+        array("id" => "atm"),
+        array("id" => "ticket")
+      ),
     "installments" => 6
   );
 
