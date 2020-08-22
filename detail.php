@@ -50,7 +50,7 @@ $preference->back_urls = array(
 );
 $preference->auto_return = "approved";
 
-$preference->notification_url = "https://fdegiovanni-mp-commerce-php.herokuapp.com/api/mp/webhook";
+$preference->notification_url = "https://fdegiovanni-mp-commerce-php.herokuapp.com/api/mp/webhook?source_news=webhooks";
 
 // Crea un ítem en la preferencia
 $item = new MercadoPago\Item();
@@ -83,7 +83,7 @@ $preference->save();
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
-    <script src="https://www.mercadopago.com/v2/security.js" view="detail"></script>
+    <script src="https://www.mercadopago.com/v2/security.js" view=""></script>
 
     <link rel="stylesheet" href="./assets/category-landing.css" media="screen, print">
 
