@@ -7,10 +7,12 @@ $link = "https://fdegiovanni-mp-commerce-php.herokuapp.com";
 
 
 // Agrega credenciales
-MercadoPago\SDK::setAccessToken('TEST-7811742321461751-081219-ba43cd254bb87479a552d8d22a153c10-145669706');
+MercadoPago\SDK::setAccessToken('APP_USR-6317427424180639-042414-47e969706991d3a442922b0702a0da44-469485398');
 
 // Crea un objeto de preferencia
 $preference = new MercadoPago\Preference();
+
+MercadoPago\SDK::setIntegratorId("dev_24c65fb163bf11ea96500242ac130004");
 
 //Metodos de pagos
 $preference->payment_methods = array(
@@ -25,7 +27,7 @@ $preference->payment_methods = array(
 
 //Datos del pagador
 $payer = new MercadoPago\Payer();
-$payer->email = "test_user_32382466@testuser.com";//"test_user_63274575@testuser.com";
+$payer->email = "test_user_63274575@testuser.com";
 $payer->name = "Lalo";
 $payer->surname = "Landa";
 $payer->phone = array(

@@ -126,15 +126,36 @@
                                                 </p>
 
                                             </h3>
-                                        </div>
+                                        </div>                                       
                                         <h3 >
-                                        payment_method_id = <?php echo $_GET['payment_method_id'] ?>
+                                        collection_id = <?php echo $_GET['collection_id'] ?>
+                                        </h3>
+
+                                        <h3 >
+                                        collection_status = <?php echo $_GET['collection_status'] ?>
                                         </h3>
                                         <h3 >
                                         external_reference = <?php echo $_GET['external_reference'] ?>
                                         </h3>
+
+                                        
+                                        
+                                        
                                         <h3 >
-                                        collection_id = <?php echo $_GET['collection_id'] ?>
+                                        payment_type = <?php echo $_GET['payment_type'] ?>
+                                        </h3>
+                                        <h3 >
+                                        preference_id = <?php echo $_GET['preference_id'] ?>
+                                        </h3>
+
+                                        <h3 >
+                                        site_id = <?php echo $_GET['site_id'] ?>
+                                        </h3>
+                                        <h3 >
+                                        processing_mode = <?php echo $_GET['processing_mode'] ?>
+                                        </h3>
+                                        <h3 >
+                                        merchant_account_id = <?php echo $_GET['merchant_account_id'] ?>
                                         </h3>
                                         
                                     </div>
