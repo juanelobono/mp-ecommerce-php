@@ -50,6 +50,8 @@ $preference->back_urls = array(
 );
 $preference->auto_return = "approved";
 
+$preference->notification_url = "https://fdegiovanni-mp-commerce-php.herokuapp.com/api/mp/webhook";
+
 // Crea un ítem en la preferencia
 $item = new MercadoPago\Item();
 $item->id = 1234;
