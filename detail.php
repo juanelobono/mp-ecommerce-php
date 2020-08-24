@@ -2,7 +2,8 @@
 
 <?php
 require __DIR__ .  '/vendor/autoload.php';
-$link = "https://fdegiovanni-mp-commerce-php.herokuapp.com";
+//$link = "https://fdegiovanni-mp-commerce-php.herokuapp.com";
+$link = "http://mpcheck.cinexo.com.ar";
 //$link = "http://localhost:3000";
 
 
@@ -51,7 +52,7 @@ $preference->back_urls = array(
 );
 $preference->auto_return = "approved";
 
-$preference->notification_url = "https://fdegiovanni-mp-commerce-php.herokuapp.com/api/mp/webhook?source_news=webhooks";
+$preference->notification_url = "http://mpcheck.cinexo.com.ar/api/mp/webhook?source_news=webhooks";
 
 // Crea un ítem en la preferencia
 $item = new MercadoPago\Item();
@@ -63,7 +64,7 @@ $item->quantity = 1;
 $item->unit_price = $_POST['price'];
 $preference->items = array($item);
 
-$preference->external_reference = "federicoadegiovanni@gmail.com";
+$preference->external_reference = "juanpablobono@gmail.com";
 
 $preference->save();
 
